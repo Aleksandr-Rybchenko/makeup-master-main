@@ -1,0 +1,58 @@
+.new-slider-container {
+  position: relative;
+  width: 100%;
+  margin-top: 32px;
+  padding-bottom: 56px;
+}
+
+.new-slide {
+  display: flex;
+  border-radius: 4px;
+  border-left: 2px solid #1b1818;
+  padding-left: 10px;
+  /* Задаем направление, чтобы элементы были в строку, а не в колонну */
+}
+.img-title {
+  display: flex;
+  align-items: center;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.new-slide img {
+  width: 70px;
+  border-radius: 50%;
+  height: auto;
+}
+
+.new-slide-text p {
+  margin-top: 18px;
+  color: #1b1818;
+  font-family: Poiret One;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slick-dots li button:before {
+  top: 32px !important;
+}
+.slick-dots li button:hover {
+  background: none !important;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+  .img-title {
+    justify-content: center;
+  }
+  .new-slider-container {
+    margin-top: 18px;
+  }
+  .new-slide-text p {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+}

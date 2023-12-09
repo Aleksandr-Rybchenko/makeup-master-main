@@ -1,6 +1,6 @@
 import styles from "./Mainblock.module.css"
 import ImageSlider from "./ImageSlider"
-
+import ImageAndTextSlider from "./ImageAndTextSlider"
 import firstImg from "./../img/lesson_one/1.png"
 import secondImg from "./../img/lesson_one/2.png"
 import threetImg from "./../img/lesson_one/3.png"
@@ -10,10 +10,42 @@ import imgLessonTwo3 from "./../img/lesson_two/3.png"
 import imgLessonThree1 from "./../img/losseon_three/1.png"
 import imgLessonThree2 from "./../img/losseon_three/2.png"
 import imgLessonThree3 from "./../img/losseon_three/3.png"
+
+import feedImg1 from "./../img/img_feedback/1.png"
+import feedImg2 from "./../img/img_feedback/2.png"
+import feedImg3 from "./../img/img_feedback/3.png"
 const Mainblock = () => {
   const images1 = [firstImg, secondImg, threetImg]
   const images2 = [imgLessonTwo1, imgLessonTwo2, imgLessonTwo3]
   const images3 = [imgLessonThree1, imgLessonThree2, imgLessonThree3]
+
+  const slides = [
+    {
+      image: feedImg1,
+      title: "АЛІНА",
+      description:
+        "Юлічка привітик, хотіла сказати велике дякую за нові знання, все було чітко, по суті, теорія дуже детально розписана Коли починали переходити до практичних уроків дуже боялась якось потягнути за волосся і це...",
+    },
+    {
+      image: feedImg2,
+      title: "ЯНА",
+      description:
+        "Хочу подякувати за такий інформаційний та насичений курс Я дуже задоволена всім, подачою інформації, ставленням і взагалі атмсоферою в студії Я отримала всі знання за якими шла Дуже рада, що обрала саме вас...",
+    },
+    {
+      image: feedImg3,
+      title: "МАРІЯ",
+      description:
+        "Я дуууже задоволена що обрала саме тебе всіма твоїми поради я користуюсь і надалі, ти завжди на звʼязку, і допоможеш виправити помилки якщо щось не виходить!) я надалі буду звертатися тільки до тебе, та рекомендувати тебе як",
+    },
+    {
+      image: feedImg3,
+      title: "МАРІЯ",
+      description:
+        "Я дуууже задоволена що обрала саме тебе всіма твоїми поради я користуюсь і надалі, ти завжди на звʼязку, і допоможеш виправити помилки якщо щось не виходить!) я надалі буду звертатися тільки до тебе, та рекомендувати тебе як",
+    },
+    // Добавьте другие слайды по мере необходимости
+  ]
 
   return (
     <div className={[styles.main_block]}>
@@ -295,6 +327,11 @@ const Mainblock = () => {
           </div>
           {/* 4 */}
         </div>
+        <h2 className={[styles.main_block_title]}>
+          відгуки від учасниць офлайн курсу
+        </h2>
+
+        <ImageAndTextSlider slides={slides} />
       </div>
     </div>
   )

@@ -90,6 +90,9 @@
     height: 100%;
     /* heit можно зафиксировать в адаптиве */
   }
+  .main_block_title {
+    font-size: 24px;
+  }
 }
 /* lesson 2 */
 .lesson_all {
