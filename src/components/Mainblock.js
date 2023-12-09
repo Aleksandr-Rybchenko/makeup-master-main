@@ -14,6 +14,8 @@ import imgLessonThree3 from "./../img/losseon_three/3.png"
 import feedImg1 from "./../img/img_feedback/1.png"
 import feedImg2 from "./../img/img_feedback/2.png"
 import feedImg3 from "./../img/img_feedback/3.png"
+import feedImg4 from "./../img/img_feedback/4.png"
+import feedImg5 from "./../img/img_feedback/5.png"
 const Mainblock = () => {
   const images1 = [firstImg, secondImg, threetImg]
   const images2 = [imgLessonTwo1, imgLessonTwo2, imgLessonTwo3]
@@ -36,13 +38,19 @@ const Mainblock = () => {
       image: feedImg3,
       title: "МАРІЯ",
       description:
-        "Я дуууже задоволена що обрала саме тебе всіма твоїми поради я користуюсь і надалі, ти завжди на звʼязку, і допоможеш виправити помилки якщо щось не виходить!) я надалі буду звертатися тільки до тебе, та рекомендувати тебе як",
+        "Я дуууже задоволена що обрала саме тебе всіма твоїми поради я користуюсь і надалі, ти завжди на звʼязку, і допоможеш виправити помилки якщо щось не виходить!) я надалі буду звертатися тільки до тебе, та рекомендувати тебе як...",
     },
     {
-      image: feedImg3,
-      title: "МАРІЯ",
+      image: feedImg4,
+      title: "Наташа",
       description:
-        "Я дуууже задоволена що обрала саме тебе всіма твоїми поради я користуюсь і надалі, ти завжди на звʼязку, і допоможеш виправити помилки якщо щось не виходить!) я надалі буду звертатися тільки до тебе, та рекомендувати тебе як",
+        "Хочу подякувати за твої курси Особливо за останній, в якому ми детально розібрали засоби і структуру волосся. Ті знання, які я отримала на перших курсах...",
+    },
+    {
+      image: feedImg5,
+      title: "Ання",
+      description:
+        "Юлічка, хочу залишити слова подяки для тебе За те, що поділилася своїми знаннями та досвідом Людина я дуже прискіплива, але в вибор...",
     },
     // Добавьте другие слайды по мере необходимости
   ]
@@ -50,7 +58,9 @@ const Mainblock = () => {
   return (
     <div className={[styles.main_block]}>
       <div className={[styles.container_mainblock]}>
-        <h2 className={[styles.main_block_title]}>програма курсу</h2>
+        <h2 id='programm' className={[styles.main_block_title]}>
+          програма курсу
+        </h2>
         <div className={styles.lesson}>
           <h3 className={[styles.lesson_title_one]}>Урок 1</h3>
           <h3 className={[styles.lesson_name]}>Теорія</h3>
@@ -296,7 +306,7 @@ const Mainblock = () => {
             </div>
             <div>
               <p className={[styles.lesson_text_slayder]}>
-                Об’єм він кореня до кінчиків
+                Об’єм від кореня до кінчиків
               </p>
               <p className={[styles.lesson_text_slayder]}>
                 Схема та техніка завивки, фінішна фіксація

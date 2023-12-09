@@ -26,7 +26,7 @@ const Main = () => {
           укладання без начісів та гофре. І даруйте емоції своїм клієнтам щодня”
         </p>
         <div className={[styles.main_two_button]}>
-          <a href='#' className={[styles.main_btn1]}>
+          <a href='#programm' className={[styles.main_btn1]}>
             Переглянути програму
           </a>
           <a href='#' className={[styles.main_btn2]}>
