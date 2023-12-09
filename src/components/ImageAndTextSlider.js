@@ -28,7 +28,7 @@ const ImageAndTextSlider = ({ slides }) => {
           <div key={index} className='new-slide'>
             <div className='img-title'>
               <img src={slide.image} alt='' />
-              <h3>{slide.title}</h3>
+              <h3 className='title-name'>{slide.title}</h3>
             </div>
             <div className='new-slide-text'>
               <p>{slide.description}</p>
