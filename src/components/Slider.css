@@ -1,0 +1,61 @@
+.slider-container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Стили для слайдера */
+.slick-slider {
+  position: relative;
+}
+
+/* Стили для списка слайдов */
+.slick-list {
+  margin: 0 -10px; /* Учтите отрицательные отступы */
+}
+
+/* Стили для слайдов */
+.slick-slide {
+  padding: 0 10px; /* Отступ между слайдами */
+}
+
+/* Стили для изображений внутри слайдов */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Стили для точек */
+.slick-dots {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000;
+  border: 1px solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.slick-dots button:hover,
+.slick-dots button.slick-active {
+  background-color: #000;
+  color: #fff;
+}
